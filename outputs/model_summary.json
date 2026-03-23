@@ -1,0 +1,17 @@
+[
+  {
+    "model": "XGBoost",
+    "mean_macro_f1": 0.8418081498022684,
+    "std_macro_f1": 0.11473179185944282
+  },
+  {
+    "model": "RandomForest",
+    "mean_macro_f1": 0.8368475051198628,
+    "std_macro_f1": 0.12657616617803708
+  },
+  {
+    "model": "SVM",
+    "mean_macro_f1": 0.7150347265201517,
+    "std_macro_f1": 0.21623783647901856
+  }
+]
