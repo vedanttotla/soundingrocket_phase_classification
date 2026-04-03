@@ -71,8 +71,6 @@ def train_evaluate(model, model_name, X_train, X_test,
     X_tr_s   = scaler.fit_transform(X_train)
     X_te_s   = scaler.transform(X_test)
     from imblearn.over_sampling import SMOTE
-
-    # Add inside train_evaluate(), before model.fit():
     smote = SMOTE(random_state=config.RANDOM_STATE)
     X_tr_s, y_train = smote.fit_resample(X_tr_s, y_train)
     print(f"\n  Training {model_name} [{fold_name}] ...", end=" ", flush=True)
